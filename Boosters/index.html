@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="menu">
             <section class="menu_container">
+                <h1>KingBoost</h1>
                 <ul class="menu_links">
                     <li class="menu_item"><a href="#" class="menu_link">Inicio</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Servicios</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Proyectos</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Nosotros</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Contacto</a></li>
-                    <button>Api Whattsap Empresa</button>
+                    <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/51937369597?text=Hola%20quiero%20mas%20informacion ';">
+                    <i class='bx bxl-whatsapp' style='color:#ffffff' ></i> Enviar WhatsApp</button>
                 </ul>
             </section>
         </nav>
@@ -31,8 +33,10 @@
             <div class="imagen-texto">
                 <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_17.jpg" alt="">
                 <div class="texto-sobre-imagen">
-                    <h1>La plataforma líder de ELO Boost</h1>
-                    <h2>Alcanza el rango de tus sueños sin esfuerzo con nuestro LoL Boosting, Coaching & Accounts servicios.</h2>
+                    <h1>La nueva plataforma de ELO Boost</h1>
+                    <h2>Alcanza el rango de tus sueños sin esfuerzo con nuestro LoL Boosting, venta de cuentas & muchos mas servicios.</h2>
+                    <button class="btn-principal" onclick="window.location.href='https://wa.me/51937369597?text=Hola%20quiero%20mas%20informacion ';">
+                        <i class='bx bxl-whatsapp' style='color:#ffffff' ></i> Enviar WhatsApp</button>
                 </div>
             </div>
         </div>
@@ -40,31 +44,56 @@
         <section class="container1"> 
             <div class="servicios">
                 <h1>Boosting</h1>
-                <img src="" alt="">
-                <span>Subimos el rango de tu cuenta a la divison que desees.</span>
+                <img src="Captura de pantalla_7-9-2024_12583_.jpeg" alt="Imagen de Boosting">
+                <span class="text2">Subimos el rango de tu cuenta a la divison que desees.</span>
             </div>
             <div class="servicios">
                 <h1>Duoboosting</h1>
-                <img src="" alt="">
-                <span>Boosteamos tu cuenta junto a la de tu amigo. </span>
+                <img src="" alt="Imagen de Duoboosting">
+                <span  class="text2">Boosteamos tu cuenta junto a la de tu amigo. </span>
             </div>
             <div class="servicios">
                 <h1>Arena</h1>
-                <img src="" alt="">
-                <span>Quieres alcanzar un mejor rango en el mejor modo del juego te ayudamos.</span>
+                <img src="ranks-removebg-preview.png" alt="Imagen de Arena">
+                <span class="text2">Quieres alcanzar un mejor rango en el mejor modo del juego te ayudamos.</span>
             </div>
         </section>
-        <section class="">
-            <h2>Su satisfacción, privacidad y seguridad está garantizada</h2>
-            <h5>Acerca de KingBoost</h5>
-            <div class="politicas">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
-                </svg>  
-                <span>Tu privacidad siempre sera nuestra prioridad</span>
+        <section class="satisfaction-section py-5">
+            <div class="container text-center">
+                <h2 class="section-title mb-4">¡Su Satisfacción Está Asegurada!</h2>
+                <p class="section-description mb-4">Acerca de BoostKing</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <span class="lock"><i class='bx bxs-lock-alt'></i></span>
+                            <h3 class="icon-title mt-3">Nuestors boosters son confiables</h3>
+                            <p class="icon-description">Contamos con un equipo de boosters contactados directamente y comprometidos con nuestra mision.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <img src="https://eloboostroyal.es/assets/icon2.png" alt="Rápido y Seguro" class="icon-img">
+                            <h3 class="icon-title mt-3">Rápido y Seguro</h3>
+                            <p class="icon-description">Ofrecemos un servicio rápido y seguro para garantizar tu progreso en el juego.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <img src="https://eloboostroyal.es/assets/icon3.png" alt="100% Satisfacción" class="icon-img">
+                            <h3 class="icon-title mt-3">Politica de reembolso</h3>
+                            <p class="icon-description">Nuestra politica de devolucion ofrece flexibilidad a los clientes. Los compradores pueden recibir reembolsos totales o parciales dependediendo del progreso.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="politicas">
-                svg
+        </section>
+        <section class="eslogan-section">
+            <div class="eslogan">
+                <img src="Chogath_24.jpg" alt="eslogan" class="eslogan-bg">
+                <div class="eslogan-text">
+                    <h3>No te quedes más tiempo sufriendo en elo bajo.</h3>
+                    <span>Juega y diviértete en un nuevo rango hoy mismo.</span>
+                </div>
             </div>
         </section>
         <section class="faq-container">
@@ -115,7 +144,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 BoostersLoL. Todos los derechos reservados.</p>
+            <p>&copy; 2024 KingBoost. Todos los derechos reservados.</p>
         </div>
     </footer>
     
@@ -125,6 +154,4 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </html>
