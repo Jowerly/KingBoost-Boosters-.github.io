@@ -6,13 +6,17 @@
 }
 
 .menu{
-    background-color: #26233a;
+    background-color: #000;
     height: 85px;
     padding: 0 25px; /* Ajustado para un espaciado uniforme */
     display: flex;
     align-items: center;
     z-index: 1111;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+    position: fixed; /* Mantiene el menú fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Para que el menú ocupe todo el ancho de la página */
 }
 .menu_container{
     display: flex;
@@ -21,7 +25,6 @@
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
-    
 }
 .menu_item{
     list-style: none;
@@ -31,6 +34,11 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.logo{
+    width: 80px;
+    height: 120px;
+    margin-top: 12px;
 }
 .menu_link{
     color: white;
@@ -43,6 +51,7 @@
     transition: background-color 0.3s;
     font-size: 22px;
     font-weight: 500;
+    margin-top: 12px;
 }
 /* Estilo para el título */
 #Titulo1 {
@@ -66,7 +75,7 @@
 }
 .btn-principal{
     height: 50px;
-    width: 180px;
+    width: 190px;
     padding: auto;
     text-align: center;
     border-radius: 45px;
@@ -76,12 +85,23 @@
     font-family: Arial, sans-serif;
     font-weight: bold;
     border: none;
+    align-items: center;
+    gap: 7px;
+    vertical-align: middle;
+    display: flex;
+    margin: auto;
     border-radius: 50px; /* Bordes redondeados */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
     cursor: pointer;
     transition: all 0.3s ease; /* Transición suave */
-    margin-top: 15px;
+    margin-top: 15px
 
+}
+.title-pag{
+    color: #FFf;
+    text-decoration: none;
+    list-style: none;
+    
 }
 .btn-principal:hover{
     transition: all 0.3 ease;
@@ -256,7 +276,7 @@ p {
     justify-content: center;
     align-items: center;
 }
-
+.icono-whatsapp{}
 .imagen-texto {
     position: relative;
     width: 100%;
@@ -308,7 +328,7 @@ p {
     justify-content: center;
     background-color: #25D366; /* Color de WhatsApp */
     color: white;
-    padding: 8px;
+    padding: 10px;
     font-size: 18px;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -317,7 +337,7 @@ p {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
     cursor: pointer;
     transition: all 0.3s ease; /* Transición suave */
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .btn-whatsapp i {
@@ -453,7 +473,9 @@ p {
 .footer-payment .payment-icons img {
     width: 50px;
     height: auto;
+    border-radius: 100px;
 }
+
 
 .footer-payment .payment-icons img:hover {
     filter: grayscale(0);
