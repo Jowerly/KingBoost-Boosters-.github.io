@@ -29,6 +29,13 @@
 .menu_item{
     list-style: none;
     position: relative;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-0deg);
+    height: 100%;
+}
+.menu_item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(90deg);
 }
 .menu_links{
     display: flex;
@@ -53,10 +60,54 @@
     font-weight: 500;
     margin-top: 12px;
 }
+.menu_link:hover {
+    background-color: #3b4252; /* Color de fondo al pasar el ratón */
+  }
+  
+  .menu_item--show:hover .menu_nesting {
+    display: block;
+  }
+  
+  .menu_nesting {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1111;
+    color: white;
+    width: 100%;
+}
+#menu_arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+  .menu_inside {
+    padding: 5px 15px;
+    width: 100%;
+  }
+  
+  .menu_link--inside {
+    color: var(--colorfg);
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+  }
+  
+  .menu_link--inside:hover {
+    background-color: #3b4252;
+    width: 100%;
+  }
 /* Estilo para el título */
 #Titulo1 {
     color: white;
-    background-color: #26233a;
+    background-color: #121b24;
     text-align: center;
     padding: 20px;
     margin: 0;
@@ -69,7 +120,7 @@
     width: 100%; /* Ocupa el 100% del ancho */
     height: 500px; /* Altura fija */
     gap: 5px; /* Espacio entre los servicios */
-    background-color: #26233a;
+    background-color: #121b24;
     padding: 20px;
     
 }
@@ -110,11 +161,11 @@
 .text2{
     font-size: 24px;
     font-weight: 500;
-    color: #000;
+    color: #fff;
 }
 /* Estilo de cada servicio */
 .servicios {
-    background-color: #d16b6b;
+    background-color: #9a7458;
     border-radius: 15px;
     width: 25%;
     height: 100%;
@@ -164,7 +215,7 @@ p {
 .faq-container {
     margin-top: auto;
     padding: 40px 20px;
-    background-color: #f4f4f4;
+    background-color: #a891ba;
     text-align: left;
 }
 
@@ -235,7 +286,7 @@ p {
     height: 400px;
 }
 .satisfaction-section {
-    background-color: #502c2c;
+    background-color: #43596f;
 }
 
 .section-title {
@@ -246,7 +297,11 @@ p {
 
 .section-description {
     font-size: 1.2rem;
-    color: #d84d1a
+    color: #d1cccc;
+    font-weight: 700;
+}
+.icon-img{
+    height: 60px;
 }
 
 .icon-box {
@@ -255,13 +310,14 @@ p {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
+    
 .icon-box:hover {
     transform: translateY(-10px);
 }
 .icon-title {
     font-size: 1.5rem;
     color: #007bff;
+    margin-top: 50px;
 }
 
 .icon-description {
@@ -271,6 +327,7 @@ p {
 .lock{
     font-size: 48px;
 }
+
 .fondo {
     display: flex;
     justify-content: center;
@@ -359,6 +416,7 @@ p {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    background-color: #000;
 }
 
 .eslogan {
@@ -370,8 +428,8 @@ p {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    margin-top: 25px;
-    background-color: #000; 
+    margin-top: 25px; 
+    margin-bottom: 25px;
 }
 
 .eslogan-bg {
