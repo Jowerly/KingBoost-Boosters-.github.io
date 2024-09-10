@@ -4,6 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    /* Gama de grises */
+--gris-claro: #f2f2f2;  /* Gris muy claro */
+--gris-medio-claro: #d9d9d9;  /* Gris claro */
+--gris-medio: #bfbfbf;  /* Gris intermedio */
+--gris-medio-oscuro: #808080;  /* Gris oscuro intermedio */
+--gris-oscuro: #4d4d4d;  /* Gris oscuro */
+--gris-muy-oscuro: #262626;  /* Gris muy oscuro */
+
+}
+
 
 .menu{
     background-color: #000;
@@ -112,7 +123,6 @@
     padding: 20px;
     margin: 0;
 }
-
 /* Contenedor de servicios */
 .container1 {
     display: flex;
@@ -148,6 +158,9 @@
     margin-top: 15px
 
 }
+.body{
+    background-color: #000;
+}
 .title-pag{
     color: #FFf;
     text-decoration: none;
@@ -165,7 +178,7 @@
 }
 /* Estilo de cada servicio */
 .servicios {
-    background-color: #9a7458;
+    background-color: #0d0d0d;
     border-radius: 15px;
     width: 25%;
     height: 100%;
@@ -178,6 +191,7 @@
     overflow: hidden;
     padding: 20px;
     margin: auto;
+    color: #Fff;
 }
 
 /* Efecto hover */
@@ -215,7 +229,8 @@ p {
 .faq-container {
     margin-top: auto;
     padding: 40px 20px;
-    background-color: #a891ba;
+    background-color: var(--gris-medio-claro);
+    border: 1px solid var(--gris-medio);
     text-align: left;
 }
 
@@ -286,7 +301,7 @@ p {
     height: 400px;
 }
 .satisfaction-section {
-    background-color: #43596f;
+    background-color: #1b1e22;
 }
 
 .section-title {
